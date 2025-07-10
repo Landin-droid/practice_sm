@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="/favicon/android-chrome-512x512-1-150x150.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/favicon/android-chrome-512x512-1-300x300.png" />
+  <link rel="icon" href="/favicon/android-chrome-512x512-1-300x300.png" sizes="192x192" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/output_global.css" crossorigin="anonymous" />
+
+  <title>Проекты</title>
+</head>
+
+<body>
+  <header class="bg-white shadow-sm">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <!-- Логотип / Название компании (слева) -->
+      <div class="flex lg:flex-1">
+        <a href="/index.html" class="-m-1.5 p-1.5">
+          <img srcset="/img/main_page/MS-md.png 119w, /img/main_page/MS.png 153w" sizes="
+                (max-width: 64rem) 119px,
+                (min-width: 64rem) 153px" src="/img/main_page/MS.png" alt="Логотип сайта Михаила Семенова"
+            title="Логотип сайта Михаила Семенова" loading="lazy" />
+        </a>
+      </div>
+
+      <!-- Навигационные ссылки (справа) -->
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/pages/articles.html"
+          class="rounded-lg text-lg sm:text-sm md:text-base lg:text-lg font-semibold uppercase leading-6 text-gray-900 hover:underline focus-visible:outline-2 outline-offset-3 outline-[#233c95]">Статьи</a>
+        <a href="projects.html"
+          class="rounded-lg text-lg sm:text-sm md:text-base lg:text-lg font-semibold uppercase leading-6 text-gray-900 hover:underline focus-visible:outline-2 outline-offset-3 outline-[#233c95]">Проекты</a>
+        <a href="#contacts"
+          class="rounded-lg text-lg sm:text-sm md:text-base lg:text-lg font-semibold uppercase leading-6 text-gray-900 hover:underline focus-visible:outline-2 outline-offset-3 outline-[#233c95]">Контакты</a>
+      </div>
+
+      <!-- Мобильное меню (кнопка для открытия на мобильных) -->
+      <div class="flex lg:hidden">
+        <button id="mobile-menu-button" type="button"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Мобильное меню (скрыто по умолчанию) -->
+    <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+      <div id="mobile-menu-overlay"
+        class="mobile-menu-overlay fixed inset-0 z-10 bg-gray-500/50 transition-opacity duration-300"></div>
+      <div id="mobile-menu-panel"
+        class="mobile-menu-panel fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+          <a href="" class="-m-1.5 p-1.5">
+            <img src="/img/main_page/MS-md.png" alt="Логотип сайта Михаила Семенова"
+              title="Логотип сайта Михаила Семенова" loading="lazy" />
+          </a>
+          <button id="close-mobile-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="/pages/articles.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-200 transition-colors duration-100">Статьи</a>
+              <a href="projects.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-200 transition-colors duration-100">Проекты</a>
+              <a href="#contacts"
+                class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-200 transition-colors duration-100">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="bg-gray-100/80 py-12">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#233c95] text-center mb-10 animate__animated animate__fadeIn">
+          Проекты компании</h2>
+        <div class="timeline">
+          <!-- Project 1 -->
+          <div class="timeline-item">
+            <div
+              class="content block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-t-2 border-[#ffc723]">
+              <img src="/img/projects/time-tracker.jpeg"
+                alt="Иллюстрация проекта: Трекер времени «UseMyTime»"
+                title="Иллюстрация проекта: Трекер времени «UseMyTime»"
+                class="w-full object-cover rounded-t-md border-b-2 border-gray-300">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#233c95]">Трекер времени «UseMyTime»</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="timeline-item">
+            <div
+              class="content block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-t-2 border-[#ffc723]">
+              <img src="/img/projects/chatbot.jpg" alt="Иллюстрация проекта: AI ChatGPT-боты" title="Иллюстрация проекта: AI ChatGPT-боты"
+                class="w-full object-cover rounded-t-md border-b-2 border-gray-300">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#233c95]">AI ChatGPT-боты</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="timeline-item">
+            <div
+              class="content block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-t-2 border-[#ffc723]">
+              <img src="/img/projects/hr-bot.jpg"
+                alt="Иллюстрация проекта: HR-бот в Telegram"
+                title="Иллюстрация проекта: HR-бот в Telegram"
+                class="w-full object-cover rounded-t-md border-b-2 border-gray-300">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#233c95]">HR-бот в Telegram</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="timeline-item">
+            <div
+              class="content block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-t-2 border-[#ffc723]">
+              <img src="/img/projects/it-regs.png"
+                alt="Иллюстрация проекта: ИТ-регламенты"
+                title="Иллюстрация проекта: ИТ-регламенты"
+                class="w-full object-cover rounded-t-md border-b-2 border-gray-300">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#233c95]">ИТ-регламенты</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="timeline-item">
+            <div
+              class="content block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-t-2 border-[#ffc723]">
+              <img src="/img/projects/company_sites.jpg"
+                alt="Иллюстрация проекта: Сайты компании"
+                title="Иллюстрация проекта: Сайты компании"
+                class="w-full object-cover rounded-t-md border-b-2 border-gray-300">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#233c95]">Сайты компании</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="timeline-item">
+            <div
+              class="content block bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-t-2 border-[#ffc723]">
+              <img src="/img/projects/bitrix.jpg"
+                alt="Иллюстрация проекта: Битрикс 24"
+                title="Иллюстрация проекта: Битрикс 24"
+                class="w-full object-cover rounded-t-md border-b-2 border-gray-300">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#233c95]">Битрикс 24</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-[#233c95] text-white py-10">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Navigation -->
+        <div>
+          <h3 id="contacts" class="text-xl font-semibold text-[#ffc723] mb-4">Контакты</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="mailto:semyonovmn@gmail.com"
+                class="text-lg text-[#ced9f3] hover:text-[#ffc723] transition-colors duration-200 focus-visible:outline-2 outline-offset-3 outline-orange">
+                <svg class="inline-block w-10 h-10 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+                semyonovmn@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+73822999784"
+                class="text-lg text-[#ced9f3] hover:text-[#ffc723] transition-colors duration-200 focus-visible:outline-2 outline-offset-3 outline-orange">
+                <svg class="inline-block w-10 h-10 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg>
+                +7 (3822) 999-784
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/semenovmn" target="_blank"
+                class="text-lg text-[#ced9f3] hover:text-[#ffc723] transition-colors duration-200 focus-visible:outline-2 outline-offset-3 outline-orange">
+                <svg class="inline-block w-10 h-10 mr-2" fill="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>X</title>
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                </svg>
+                </svg>
+                X (ранее Twitter)
+              </a>
+            </li>
+            <li>
+              <a href="tg://resolve?domain=SemyonovMN" target="_blank"
+                class="text-lg text-[#ced9f3] hover:text-[#ffc723] transition-colors duration-200 focus-visible:outline-2 outline-offset-3 outline-orange">
+                <svg class="inline-block w-10 h-10 mr-2" fill="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Telegram</title>
+                  <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                </svg>
+                Telegram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-xl font-semibold text-[#ffc723] mb-4">О Компании</h3>
+          <a href="https://npptec.ru/" target="_blank"
+            class="text-lg text-[#ced9f3] hover:text-[#ffc723] transition-colors duration-200 focus-visible:outline-2 outline-offset-3 outline-orange">ООО
+            НПП «ТЭК»</a>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <h3 class="text-xl font-semibold text-[#ffc723] mb-4">Адрес</h3>
+          <p class="text-lg text-[#ced9f3]">
+            ул. Высоцкого, д. 33,<br>
+            г. Томск, Россия, 634040
+          </p>
+          <a href="https://yandex.ru/maps/-/CHwzFFN7" target="_blank"
+            class="text-lg text-[#ced9f3] hover:text-[#ffc723] focus-visible:outline-2 outline-offset-3 outline-orange">Показать
+            на карте</a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-8 pt-8 border-t border-[#7f90d7] text-center">
+        <p class="text-[#ced9f3] text-md">&copy; 2025 Сайт Семенова Михаила Николаевича. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn"
+    class="fixed bottom-10 right-10 bg-[#233c95] outline-2 outline-orange text-[#ffc723] p-3 rounded-full shadow-lg hover:bg-[#7f90d7] hover:cursor-pointer focus-visible:bg-[#7f90d7] transition-colors duration-200 hidden">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+  <script src="/js/global.js"></script>
+</body>
+
+</html>

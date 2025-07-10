@@ -1,0 +1,19 @@
+{
+  "name": "practice_sm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./css/global.css -o ./css/output_global.css",
+    "build": "npm run build:css",
+    "dev": "tailwindcss -i ./css/global.css ./css/output_global.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
