@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Личный сайт Семенова Михаила Николаевича. Семенов Михаил Николаевич 
+  <meta name="description" content="Личный сайт Семенова Михаила Николаевича. Семенов Михаил Николаевич 
     является действующим заместителем генерального директора по информационным технологиям 
     в обществе с ограниченной ответственностью научно-производственном предприятии «Томская Электронная Компания» 
     (ООО НПП «ТЭК») в городе Томск по адресу улица Высоцкого, 33">
@@ -101,8 +100,11 @@
         <div class="flex flex-col md:flex-row items-center gap-8">
           <!-- Image -->
           <div class="md:w-1/3 flex justify-center">
-            <img src="img/main_page/Worker.png" title="Семенов Михаил Николаевич" alt="Семенов Михаил Николаевич"
-              class="object-cover">
+            <picture>
+              <source srcset="img/main_webp/Worker.webp" type="image/webp">
+              <img src="img/main_page/Worker.png" title="Семенов Михаил Николаевич" alt="Семенов Михаил Николаевич"
+                class="object-cover" fetchpriority="high">
+            </picture>
           </div>
 
           <!-- Text Content -->
@@ -149,9 +151,12 @@
           <h2 class="text-3xl md:text-4xl font-bold text-[#233c95] text-center mb-10">Место работы</h2>
           <div class="flex flex-col md:flex-row gap-8">
             <div class="w-full md:w-1/2">
-              <img src="img/main_page/NPP-TEK.jpg" title="Коллектив НПП «Томская электронная компания»"
-                alt="Коллектив НПП «Томская электронная компания»" class="w-full object-cover rounded-lg shadow-md"
-                loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/NPP-TEK.webp" type="image/webp">
+                <img src="img/main_page/NPP-TEK.jpg" title="Коллектив НПП «Томская электронная компания»"
+                  alt="Коллектив НПП «Томская электронная компания»" class="w-full object-cover rounded-lg shadow-md"
+                  loading="lazy">
+              </picture>
             </div>
             <div class="w-full md:w-1/2">
               <h3 onclick="window.location.href=`https://npptec.ru/`"
@@ -175,69 +180,95 @@
             <!-- Certificate 1 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Rubius.png" alt="Сертификат от Rubius" title="Сертификат от Rubius"
-                class="w-full object-cover rounded-md mb-4" loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Rubius.webp" type="image/webp">
+                <img src="img/main_page/Rubius.png" alt="Сертификат от Rubius" title="Сертификат от Rubius"
+                  class="w-full object-cover mb-4" loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Английский язык, Rubius, 2018</p>
             </div>
             <!-- Certificate 2 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/solid.png" alt="Свидетельство об успешной реализации проекта с SolidWorks"
-                title="Свидетельство об успешной реализации проекта с SolidWorks"
-                class="w-full object-cover rounded-md mb-4" loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/solid.webp" type="image/webp">
+                <img src="img/main_page/solid.png" alt="Свидетельство об успешной реализации проекта с SolidWorks"
+                  title="Свидетельство об успешной реализации проекта с SolidWorks" class="w-full object-cover mb-4"
+                  loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Успешная реализация проекта совместно с SolidWorks, 2018</p>
             </div>
             <!-- Certificate 3 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/SoftLine.jpg" alt="Сертификат от Softline ITIL3F"
-                title="Сертификат от Softline ITIL3F" class="w-full object-cover rounded-md mb-4" loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/SoftLine.webp" type="image/webp">
+                <img src="img/main_page/SoftLine.jpg" alt="Сертификат от Softline ITIL3F"
+                  title="Сертификат от Softline ITIL3F" class="w-full object-cover mb-4" loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">ITIL3F, SoftLine, 2016</p>
             </div>
             <!-- Certificate 4 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Ser5.png" alt="Сертификат от Softline по управлению проектами"
-                title="Сертификат от Softline по управлению проектами" class="w-full object-cover rounded-md mb-4"
-                loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Ser5.webp" type="image/webp">
+                <img src="img/main_page/Ser5.png" alt="Сертификат от Softline по управлению проектами"
+                  title="Сертификат от Softline по управлению проектами" class="w-full object-cover mb-4"
+                  loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Управление проектами по стандарту PMBOK, SoftLine, 2012</p>
             </div>
             <!-- Certificate 5 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Ser6.png" alt="Сертификат от Softline по написанию SQL-запросов"
-                title="Сертификат от Softline по написанию SQL-запросов" class="w-full object-cover rounded-md mb-4"
-                loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Ser6.webp" type="image/webp">
+                <img src="img/main_page/Ser6.png" alt="Сертификат от Softline по написанию SQL-запросов"
+                  title="Сертификат от Softline по написанию SQL-запросов" class="w-full object-cover mb-4"
+                  loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Написание SQL-запросов, SoftLine, 2012</p>
             </div>
             <!-- Certificate 6 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Ser4.png" alt="Сертификат от Microsoft Partner"
-                title="Сертификат от Microsoft Partner" class="w-full object-cover rounded-md mb-4" loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Ser4.webp" type="image/webp">
+                <img src="img/main_page/Ser4.png" alt="Сертификат от Microsoft Partner"
+                  title="Сертификат от Microsoft Partner" class="w-full object-cover mb-4" loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Написание SQL-запросов, Microsoft, 2012</p>
             </div>
             <!-- Certificate 7 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Ser1.png" alt="Сертификат от 1C по курсу торгового функционала"
-                title="Сертификат от 1C по курсу торгового функционала" class="w-full object-cover rounded-md mb-4"
-                loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Ser1.webp" type="image/webp">
+                <img src="img/main_page/Ser1.png" alt="Сертификат от 1C по курсу торгового функционала"
+                  title="Сертификат от 1C по курсу торгового функционала" class="w-full object-cover mb-4"
+                  loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Концепция и торговый функционал, 1C-Образование, 2011</p>
             </div>
             <!-- Certificate 8 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Ser2.png" alt="Сертификат от 1C по курсу бюджетирования"
-                title="Сертификат от 1C по курсу бюджетирования" class="w-full object-cover rounded-md mb-4"
-                loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Ser2.webp" type="image/webp">
+                <img src="img/main_page/Ser2.png" alt="Сертификат от 1C по курсу бюджетирования"
+                  title="Сертификат от 1C по курсу бюджетирования" class="w-full object-cover mb-4" loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Бюджетирование и планирование , 1C-образование, 2011</p>
             </div>
             <!-- Certificate 9 -->
             <div
               class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-2 border-[#7f90d7]">
-              <img src="img/main_page/Ser3.png" alt="Сертификат от ТехЭксперт" title="Сертификат от ТехЭксперт"
-                class="w-full object-cover rounded-md mb-4" loading="lazy">
+              <picture>
+                <source srcset="img/main_webp/Ser3.webp" type="image/webp">
+                <img src="img/main_page/Ser3.png" alt="Сертификат от ТехЭксперт" title="Сертификат от ТехЭксперт"
+                  class="w-full object-cover mb-4" loading="lazy">
+              </picture>
               <p class="text-gray-700 text-center">Использование электронных систем нормативно-технической информации,
                 2011</p>
             </div>
@@ -333,7 +364,7 @@
     </div>
   </footer>
 
-  <button id="scrollToTopBtn"
+  <button id="scrollToTopBtn" aria-label="Кнопка перехода к началу страницы"
     class="fixed bottom-10 right-10 bg-[#233c95] outline-2 outline-orange text-[#ffc723] p-3 rounded-full shadow-lg hover:bg-[#7f90d7] hover:cursor-pointer focus-visible:bg-[#7f90d7] transition-colors duration-200 hidden">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>

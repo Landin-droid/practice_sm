@@ -1,43 +1,34 @@
 @import "tailwindcss";
-
-@theme {
+@theme{
   --color-dark-blue: #233C95;
   --color-orange: #FFC723;
 }
-
-html {
+html{
   scroll-behavior: smooth;
   font-family: "Open Sans";
 }
-
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6, a{
   font-family: "Inter", sans-serif;
 }
-
-.mobile-menu-panel {
+.mobile-menu-panel{
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
-
-.mobile-menu-panel.open {
+.mobile-menu-panel.open{
   transform: translateX(0);
 }
-
-.mobile-menu-overlay {
+.mobile-menu-overlay{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
-.mobile-menu-overlay.open {
+.mobile-menu-overlay.open{
   opacity: 1;
 }
-
-.timeline {
+.timeline{
   position: relative;
   padding-left: 2rem;
 }
-
-.timeline::before {
+.timeline::before{
   content: '';
   position: absolute;
   left: 1rem;
@@ -46,13 +37,12 @@ h1, h2, h3, h4, h5, h6, a {
   width: 4px;
   background: #ffc723;
 }
-
-.timeline-item {
+.timeline-item{
   position: relative;
   margin-bottom: 2rem;
 }
 
-.timeline-item::before {
+.timeline-item::before{
   content: '';
   position: absolute;
   left: -1.75rem;
@@ -63,39 +53,33 @@ h1, h2, h3, h4, h5, h6, a {
   border-radius: 50%;
 }
 
-@media (min-width: 768px) {
-  .timeline {
+@media (min-width: 768px){
+  .timeline{
     padding-left: 0;
   }
-  .timeline::before {
+  .timeline::before{
     left: 50%;
     transform: translateX(-50%);
   }
-  .timeline-item::before {
+  .timeline-item::before{
     left: calc(50% - 6px);
   }
-  .timeline-item:nth-child(even) .content {
+  .timeline-item:nth-child(even) .content{
     margin-left: calc(50% + 1.5rem);
     border-left: #FFC723 2px solid;
   }
-  .timeline-item:nth-child(odd) .content {
+  .timeline-item:nth-child(odd) .content{
     margin-right: calc(50% + 1.5rem);
     border-right: #FFC723 2px solid;
     text-align: right;
   }
 }
-
-body {
-  background-image: url("/img/background-op.png");
+body{
+  background-image: image-set(
+    url("/img/background-op.webp") type("image/webp"),
+    url("/img/background-op.png") type("image/png")
+  );
   background-origin: border-box;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.inter-font {
-  font-family: "Inter";
-}
-
-.opensans-font {
-  font-family: "Open Sans";
 }
