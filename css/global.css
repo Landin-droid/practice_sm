@@ -1,11 +1,21 @@
 @import "tailwindcss";
 @theme{
   --color-dark-blue: #233C95;
+  --color-light-blue: #7F90D7;
   --color-orange: #FFC723;
 }
 html{
   scroll-behavior: smooth;
   font-family: "Open Sans";
+}
+body{
+  background-image: image-set(
+    url("/img/background-op.webp") type("image/webp"),
+    url("/img/background-op.png") type("image/png")
+  );
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1, h2, h3, h4, h5, h6, a{
   font-family: "Inter", sans-serif;
@@ -35,7 +45,7 @@ h1, h2, h3, h4, h5, h6, a{
   top: 0;
   bottom: 0;
   width: 4px;
-  background: #ffc723;
+  background: var(--color-orange);
 }
 .timeline-item{
   position: relative;
@@ -49,7 +59,7 @@ h1, h2, h3, h4, h5, h6, a{
   top: 1rem;
   width: 12px;
   height: 12px;
-  background: #233c95;
+  background: var(--color-dark-blue);
   border-radius: 50%;
 }
 
@@ -66,20 +76,16 @@ h1, h2, h3, h4, h5, h6, a{
   }
   .timeline-item:nth-child(even) .content{
     margin-left: calc(50% + 1.5rem);
-    border-left: #FFC723 2px solid;
+    border-left: var(--color-orange) 2px solid;
   }
   .timeline-item:nth-child(odd) .content{
     margin-right: calc(50% + 1.5rem);
-    border-right: #FFC723 2px solid;
+    border-right: var(--color-orange) 2px solid;
     text-align: right;
   }
 }
-body{
-  background-image: image-set(
-    url("/img/background-op.webp") type("image/webp"),
-    url("/img/background-op.png") type("image/png")
-  );
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 768px){
+  .timeline-item .content{
+    border-left: var(--color-orange) 2px solid;
+  }
 }
